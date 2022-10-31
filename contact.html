@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Why Study Abroad Paris</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        form{
+            margin-left: 33%;
+            background-color: #DDD5CA;
+            position: absolute;
+            padding: 30px;
+    
+        }
+        h1{
+            background-color: #DDD5CA;
+            text-align: center;
+            font-size: 60px;
+            color: #FFFDFA;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        h2{
+            text-align: center; 
+            margin-top: 10%;
+            margin-bottom: 20%;
+            font-size: 25px;
+        }
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="experinces.html">My Experince</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <div class="left">
+            <li><a href="gallery.html">Gallery</a> </li>
+            <li><a href="contact.html"> Contact</a></li>
+            <li><a href="sitemap.html"> Sitemap</a></li>
+        </div>
+      </ul>
+    
+      
+    <h1>Your Feedback</h1>
+    <h2>I want to hear from to see if the information I provided was helpful</h2>
+    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+        <label for="last name">Last Name :</label>
+        <input 
+        type="text" 
+        name="Last Name:"
+        placeholder="Enter your Last Name"
+        id="last name">
+        <br>
+        <label for="first name">First Name:</label>
+        <input 
+        type="text"
+        name="First Name:" 
+        placeholder="Enter your First Name"
+        id="first name"> 
+        <br>
+        <label for="email">Email:</label>
+        <input 
+        type="text"
+        name="Email:" 
+        placeholder="Email Address"
+        id="email"> 
+        <br>
+        <p>I am interested in particpating in a Study Aboard Program: </p>
+        <li><label for="Yes">Yes</label>
+        <input type="checkbox" 
+        name="answer"
+        id="Yes"
+        value="Yes"
+        ></li>
+        <li><label for="No">No</label>
+        <input type="checkbox"
+        name="answer"
+        id="No"
+        value="No"
+        ></li>
+        <li> <label for="Maybe">Maybe</label>
+        <input type="checkbox"
+        name="answer"
+        id="Maybe"
+        value="Maybe"></li>
+        <br>
+        <div>
+            <div>
+                <label for="comments">Leave a Reply:</label>
+            </div>
+            <div>
+                <textarea name="comments" id="comments" cols="25" rows="5" placeholder="Enter your comment here..."
+                ></textarea>
+            </div>
+        </div>
+        <button type="submit">
+            <img src="images/Submit.png" alt="mailbox" height="40">
+        </button>
+        <button type="reset">
+            <img src="images/reset.png" alt="reset" height="40">
+        </button>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Why Study Abraod Paris</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox;/* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+        .header{
+            background-color: #DDD5CA;
+            text-align: center;
+            font-size: 60px;
+            color: #FFFDFA;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head> 
+<body>
+
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="experinces.html">My Experince</a></li>
+  <li><a href="food.html">Food</a></li>
+  <li><a href="culture.html">Culture</a></li>
+  <div class="left">
+      <li><a href="gallery.html">Gallery</a> </li>
+      <li><a href="contact.html"> Contact</a></li>
+      <li><a href="sitemap.html"> Sitemap</a></li>
+  </div>
+    <!-- Header -->
+<div class="header">
+    <h1>The Gallery</h1>
+  </div>
+  
+  <!-- Photo Grid -->
+  <div class="row"> 
+    <div class="column">
+      <img src="images/food.jpg" style="width:100%">
+      <img src="images/lorie.jpg" style="width:100%">
+      <img src="images/louve.jpg" style="width:100%">
+      <img src="images/SpringEiffle.jpg" style="width:100%">
+      <img src="images/versailles.jpg" style="width:100%">
+      <img src="images/Art.jpg" style="width:100%">
+      <img src="images/Bastile.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images/flowers.jpg" style="width:100%">
+      <img src="images/food2.jpg" style="width:100%">
+      <img src="images/Notredame.jpg" style="width:100%">
+      <img src="images/Monalisa.jpg" style="width:100%">
+      <img src="images/emilyinparis.jpg" style="width:100%">
+      <img src="images/friends.jpg" style="width:100%">
+    </div>  
+    <div class="column">
+      <img src="images/metro.jpg" style="width:100%">
+      <img src="images/food3.jpg" style="width:100%">
+      <img src="images/kitchen.jpg" style="width:100%">
+      <img src="images/varseil2.jpg" style="width:100%">
+      <img src="images/friends2.jpg" style="width:100%">
+      <img src="images/vgates.jpg" style="width:100%">
+      <img src="images/fashion.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="images/Wine.jpg" style="width:100%">
+      <img src="images/hotcho.jpg" style="width:100%">
+      <img src="images/virgil.jpg" style="width:100%">
+      <img src="images/Books.jpg" style="width:100%">
+      <img src="images/Building1.jpg" style="width:100%">
+      <img src="images/Building2.jpg" style="width:100%">
+    </div>
+  </div>
+  
+    
+</body>
+</html>
