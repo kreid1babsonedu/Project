@@ -7,6 +7,27 @@
     <title>Contact | Why Study Abroad Paris</title>
     <link rel="stylesheet" href="styles/nav.css">
     <style>
+    .intro-header.cc-subpage{
+        height: 200px;
+        background-color: #DDD5CA;
+    }
+    body{
+        font-family: sans-serif;
+        color: #1a1b1f;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        align-items: center;
+    }
+    .intro-content {
+        width:70%;
+        text-align: center;
+        font-size: 100px;
+        margin-left: 17%;
+        color: #FFFDFA;
+        padding-top: 70px;
+        
+    }
         li{
             list-style: none;
         }
@@ -17,18 +38,14 @@
             padding: 30px;
     
         }
-        h1{
-            background-color: #DDD5CA;
-            text-align: center;
-            font-size: 60px;
-            color: #FFFDFA;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-        }
         h2{
             text-align: center; 
             margin-top: 10%;
             margin-bottom: 20%;
             font-size: 25px;
+        }
+        .mat{
+            margin-bottom: 30px;
         }
        
     </style>
@@ -36,7 +53,7 @@
 <body>
     <ul>
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="experinces.html">My Experince</a></li>
+        <li><a href="experinces2.html">My Experince</a></li>
         <li><a href="food.html">Food</a></li>
         <li><a href="culture.html">Culture</a></li>
         <div class="left">
@@ -46,10 +63,15 @@
         </div>
       </ul>
     
-      
-    <h1>Your Feedback</h1>
+      <div class="intro-header cc-subpage">
+        <div class ="intro-content">
+      <div class="heading-jumbo"> Contact</div>
+        </div>
+    </div>
+    <br>
     <h2>I want to hear from you to see if the information I provided was helpful</h2>
-    <form action="https://oim-apis.herokuapp.com/form2" method="post">
+    <div class="mat">
+    <form action="https://oim-apis.herokuapp.com/form2" method="post" name="myForm">
         <label for="last name">Last Name :</label>
         <input 
         type="text" 
@@ -105,7 +127,12 @@
         <button type="reset">
             <img src="images/reset.png" alt="reset" height="40">
         </button>
-
+</div>
     </form>
+    <script>
+      
+
+
+    </script>
 </body>
 </html>

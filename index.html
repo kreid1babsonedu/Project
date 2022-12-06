@@ -7,10 +7,10 @@
     <meta name="keywords" content="Study, Paris, Abroad">
     <title>Home | Why Study Adroad</title>
     <link rel="stylesheet" href="styles/nav.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_/favicon-16x16.png">
+<link rel="manifest" href="favicon_/site.webmanifest">
     <style>
     
 body, html {
@@ -59,13 +59,29 @@ body, html {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+@media screen and (max-width: 600px) {
+  #moblie {
+    font-size: 30px;
+  }
+}
+#mybutton{
+  background-color: #FFFDFA;
+  font-size: 16px;
+  padding: 14px 40px;
+  border-radius: 12px;
+  color: #b1a593;
+  border-color: #DDD5CA;
+}
+a{
+  text-decoration: none;
+}
 
         </style>
 </head>
 <body>
     <ul>
         <li><a class="active" href="index.html">Home</a></li>
-        <li><a href="experinces.html">My Experince</a></li>
+        <li><a href="experinces2.html">My Experince</a></li>
         <li><a href="food.html">Food</a></li>
         <li><a href="culture.html">Culture</a></li>
         <div class="left">
@@ -82,6 +98,25 @@ body, html {
             <!-- <div class="bg-image img5"></div>
             <div class="bg-image img6"></div> -->
 
-            <div class="bg-text">WHY STUDY ABROAD IN PARIS</div>
+            <div class="bg-text" id="mobile">WHY STUDY ABROAD IN PARIS
+             <a href="sitemap.html"><button id="mybutton">Click to Explore</button></a>
+            </div>
+
+    <script>
+
+document.getElementById("mybutton").onmouseover = function() {mouseOver()};
+document.getElementById("mybutton").onmouseout = function() {mouseOut()};
+
+function mouseOver() {
+  document.getElementById("mybutton").style.backgroundColor = "#DDD5CA";
+}
+
+function mouseOut() {
+  document.getElementById("mybutton").style.backgroundColor = "#FFFDFA";
+}
+
+
+      
+    </script>
 </body>
 </html>

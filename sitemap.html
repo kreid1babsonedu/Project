@@ -4,29 +4,106 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Map | Why Study Abroad</title>
+    <title>SiteMap | Why Study Abroad</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_/favicon-16x16.png">
+<link rel="manifest" href="favicon_/site.webmanifest">
     <style>
+     .intro-header.cc-subpage{
+        height: 200px;
+        background-color: #DDD5CA;
+    }
+    .intro-content {
+        width:70%;
+        text-align: center;
+        font-size: 100px;
+        margin-left: 18%;
+        color: #FFFDFA;
+        padding-top: 70px;
+        
+    }
+    
+    body{
+        font-family: sans-serif;
+        color: #1a1b1f;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        align-items: center;
+    }
         body{
             background-color: #F8F3EE;
         }
-        li{
+        ul{
             list-style-type: none;
             font-size: larger;
             text-decoration: none;
-            color: black;
+            
         }
+        a{
+            text-decoration: none;
+            color: black; 
+        }
+        button{
+    background-color: #FFFDFA;
+    font-size: 16px;
+    padding: 14px 40px;
+    border-radius: 12px;
+    color: #b1a593;
+    border-color: #DDD5CA;
+     }   
     </style>
 </head>
-<body>
-    <h2>Sitemap</h2>
+<body id="mode">
+    <div class="intro-header cc-subpage">
+        <div class ="intro-content">
+      <div class="heading-jumbo"> Sitemap</div>
+        </div>
+    </div>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="experinces.html">My Experinces</a></li>
+        <li><a href="experinces2.html">My Experinces</a></li>
         <li><a href="food.html">Food</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li></li>
     </ul>
-    
+    <div class="center container">
+        <div class="counter-container">
+          <i class="fab fa-instagram fa-4x"></i>
+          <div class="counter" data-target="100000000" id="paristarget">0</div>
+          <span>Number of People Travelling to PARIS, Let today be the day for you!</span>
+          <br>
+    <button>
+        DarkMode
+    </button>
+<script>
+    function darkMode (){
+    console.log("...starting...");
+        //1. select the element we want to manipulate
+        const demoEl = document.getElementById("mode");
+        demoEl.style.backgroundColor="lightgrey";
+        
+  } 
+  document.querySelector("button").onclick = function () {
+        darkMode();
+      };
+let number = 0
+      function travellers () {
+        if (number<=99999999){
+        const resultEL = document.getElementById("paristarget");
+
+        resultEL.innerText = number;
+        number = number + 1 ;
+        resultEL.innerText = number;
+        
+        setTimeout(travellers,1);
+      }
+    }
+    document.addEventListener("DOMContentLoaded", function () {
+        travellers();
+      });
+</script>
 </body>
 </html>

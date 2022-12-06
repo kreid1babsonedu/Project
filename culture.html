@@ -7,53 +7,115 @@
     <meta name="keywords" content="culture, fashion, diversity">
     <title>Culture | Why Study in Paris </title>
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_/favicon-16x16.png">
+<link rel="manifest" href="favicon_/site.webmanifest">
     <style>
-        .culture{
-            background-color: #DDD5CA;
-            text-align: center;
-            font-size: 60px;
-            color: #FFFDFA;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-        }
-        .intro{
-            text-align: center; 
-            margin-top: 10%;
-            margin-bottom: 20%;
-            font-size: 25px;
-        }
+    .intro-header.cc-subpage{
+        height: 200px;
+        background-color: #DDD5CA;
+    }
+    body{
+        font-family: sans-serif;
+        color: #1a1b1f;
+        font-size: 16px;
+        line-height: 28px;
+        font-weight: 400;
+        align-items: center;
+    }
+    .intro-content {
+        width:70%;
+        text-align: center;
+        font-size: 100px;
+        margin-left: 17%;
+        color: #FFFDFA;
+        padding-top: 70px;
+        
+    }
+    .w-layout-grid{
+        display: -ms-grid;
+        display: grid;
+        grid-auto-columns: 1fr;
+        -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-row-gap: 16px;
+        grid-column-gap:16px;
+    }
+    h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 36px;
+        line-height: -50px;
+        font-weight: 400;
+        
 
-        h2{
-            text-align: center;
-        }
-        .song{
-            margin-left: 10%;
-        }
-        * {
-            box-sizing: border-box;
-            }
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-            }
+    }
+    .hi-there-heading {
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+    .about-head-text-wrap{
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+        
+    }
+    #inro{
+        -ms-grid-column: 2;
+        grid-column-start: 2;
+        -ms-grid-column-span: 1;
+        grid-column-end: 3;
+        -ms-grid-row: 1;
+        grid-row-start: 1;
+        -ms-grid-row-span: 1;
+        grid-row-end:2;
+        float: right;
+    }
+    .song{
+      margin-left: 10%;
+    }
+    * {
+      box-sizing: border-box;
+     }
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
 
         .row::after {
         content: "";
         clear: both;
         display: table;
         }
-        .breaker{
-            background-color: #DDD5CA;
-            color: #DDD5CA;
-            border-bottom: 20px;
-        }
+        .music-divider{
+        text-align: center;
+        font-family: sans-serif;
+        /* background-color: #DDD5CA; */
+        font-size: 40px;
+        padding-top: 47px;
+        color: #FFFDFA;
+    }
+    .background-music-title{
+        height: 100px;
+        background-color: #DDD5CA;
+    }
+    .playlist{
+      margin-left:20% ;
+      margin-right:20% ;
+    }
+        
 
     </style>
 </head>
 <body>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="experinces.html">My Experince</a></li>
+        <li><a href="experinces2.html">My Experince</a></li>
         <li><a href="food.html">Food</a></li>
         <li><a href="culture.html">Culture</a></li>
         <div class="left">
@@ -62,10 +124,26 @@
             <li><a href="sitemap.html"> Sitemap</a></li>
         </div>
       </ul>
+      <div class="intro-header cc-subpage">
+        <div class ="intro-content">
+      <div class="heading-jumbo"> Culture</div>
+        </div>
+    </div>
+    <br>
+    <div class="section">
+            <div class="container">
+                <div class="w-layout-grid about-intro-grid">
+                    <div class="about-head-text-wrap">
+       <div class="label cc-about-light">Let's Talk</div>
+       <h2 class="hi-there-heading">Culture</h2>
+        <p class="paragraph-light"> Come study in Paris if you want to inrich yourself in the vibriant French culture. There are loads of places to vist and experience and there will be something that you want to experince multiple times. If you are a are into history there are loads of Museums to vist! If you are into the arts there are plenty of famous and even modern artworks you'll love to see. And of course if you love fashion Paris is the Place to be! Lastly, nightlife in Paris comes with new music to listen to! Scroll to read more</p></div>
+        <div id="intro-image1"><img  src="images/culture.jpg" alt="culture" title="culture" height="400px" width="400px"></div>
+       
+                </div>
+            </div>
+        </div>
+    </div>
 
-      <div class="culture"><h1>Culture</h1></div>
-
-      <div class="intro"> While being abroad in Paris, I learned so much about their rich culture through the arts, fashion,and people</div>
 
       <h2>Top 3 Must See Museums</h2>
       
@@ -74,20 +152,37 @@
           <img src="images/louve.jpg" alt="louve" title="louve" style="width:100%">
         </div>
         <div class="column">
-          <img src="images/versailles.jpg" alt="ver" title="ver" style="width:100%">
+          <img src="images/versailles.jpg" alt="ver" title="versailles" style="width:100%">
         </div>
         <div class="column">
           <img src="images/lorie.jpg" alt="lorie" title="lorie" style="width:100%">
         </div>
       </div>
 
-      <div class="breaker">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit at asperiores amet similique culpa tempora quibusdam nulla obcaecati expedita ea! Culpa vel cupiditate eveniet exercitationem officiis, excepturi inventore dicta dignissimos.
+      <div class="background-music-title">
+        <div class="music-divider">Songs to add to your playlist</div>
+        <br> 
+      <div class="playlist">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1HDqaIxeJ70BTHgZWEuaeT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/45eY7Qi2PDUs8WJEhjGWdN?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/7sKDftgGirHWTVFMtJoDoh?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1m0UFnuTktOkksvjbF9z0m?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0RE4crnT3jRms1xxVlEZx2?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <br>
+    <div class="section">
+      <div class="container">
+          <div class="w-layout-grid about-intro-grid">
+              <div class="about-head-text-wrap">
+ <div class="label cc-about-light"></div>
+ <h2 class="hi-there-heading">Fashion</h2>
+  <p class="paragraph-light"> People from across the world travel to Paris for the fashion. Paris itself is home to so many luxury desisgner houses such as; Channel, Louis Vutton, Christian Dior, Balmain, Yves Saint Laurent, and much more! </p></div>
+  <div id="intro-image1"><img  src="images/fashion3.jpg" alt="Fashion" title="Fashion" height="400px" width="400px"></div>
+ 
+          </div>
       </div>
-
-    
-      <h2>Common French song I head during nightlife</h2>  
-      <iframe class="song" style="border-radius:12px" src="https://open.spotify.com/embed/track/1HDqaIxeJ70BTHgZWEuaeT?utm_source=generator&theme=0" width="80%" height="252" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</div>
 
 </body>
 </html>
