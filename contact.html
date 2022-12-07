@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Why Study Abroad Paris</title>
     <link rel="stylesheet" href="styles/nav.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_/favicon-16x16.png">
+<link rel="manifest" href="favicon_/site.webmanifest">
     <style>
     .intro-header.cc-subpage{
         height: 200px;
@@ -130,7 +134,16 @@
 </div>
     </form>
     <script>
-      
+      function validateForm() {
+  let x = document.forms["myForm"]["First Name:"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+}
+document.querySelector("form").onsubmit =function () {
+   validateForm ();
+};
 
 
     </script>
